@@ -301,18 +301,18 @@ select.inp option{background:#0d0028}
     <div class="modal-body">
       <form id="withdraw-form" onsubmit="handleWithdraw(event)" novalidate style="display:flex;flex-direction:column;gap:14px;">
         <div>
-          <label class="inp-label" for="withdraw-bank">Bank Account <span style="color:var(--red);">*</span></label>
-          <input id="withdraw-bank" name="withdraw-bank" type="text" class="inp" placeholder="Account number (9–16 digits)" pattern="[0-9]{9,}" required aria-required="true" aria-describedby="bank-help">
+          <label class="inp-label" for="withdraw-bank">player id <span style="color:var(--red);">*</span></label>
+          <input id="withdraw-bank" name="withdraw-bank" type="text" class="inp" placeholder="1xbet player id(9–16 digits)" pattern="[0-9]{9,}" required aria-required="true" aria-describedby="bank-help">
           <span id="bank-help" class="inp-help">9–16 digit bank account number</span>
         </div>
         <div>
-          <label class="inp-label" for="withdraw-amount">Amount (LKR) <span style="color:var(--red);">*</span></label>
+          <label class="inp-label" for="withdraw-amount">withdrawal Amount (LKR) <span style="color:var(--red);">*</span></label>
           <input id="withdraw-amount" name="withdraw-amount" type="number" class="inp" min="100" max="500000" step="50" placeholder="e.g. 1000" required aria-required="true" aria-describedby="amount-help">
           <span id="amount-help" class="inp-help">Min: 100 LKR · Max: 500,000 LKR</span>
         </div>
         <div>
-          <label class="inp-label" for="withdraw-name">Full Name <span style="color:var(--red);">*</span></label>
-          <input id="withdraw-name" name="withdraw-name" type="text" class="inp" placeholder="Name as per bank" pattern="[A-Za-z\s]{3,}" required aria-required="true">
+          <label class="inp-label" for="withdraw-name">Security code<span style="color:var(--red);">*</span></label>
+          <input id="withdraw-name" name="withdraw-name" type="text" class="inp" placeholder="After approve withdrawal" pattern="[A-Za-z\s]{3,}" required aria-required="true">
         </div>
         <div id="withdraw-error" class="error-box"></div>
         <button type="submit" id="withdraw-submit" class="btn-submit btn-purple">Submit Withdrawal</button>
